@@ -1,0 +1,41 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <h1>Личный кабинет {{ request.user.username }}</h1>
+    <style>
+        .colum {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+    <div class="row">
+        <div class="col-md-3 colum">
+            <a class="btn{% if cabinet_tab == 'profile' %} btn-primary{% endif %}" href="{% url 'client_app:profile' %}">Настройки профиля</a>
+            <a class="btn {% if cabinet_tab == 'write_post' %} btn-primary{% endif %}" href="{% url 'client_app:write_post' %}">Написать статью</a>
+            <a class="btn {% if cabinet_tab == 'my_articles' %} btn-primary{% endif %}" href="{% url 'client_app:my_articles' %}">Все статьи</a>
+            <a class="btn " href="">Мои рефералы</a>
+            <a class="btn " href="">Статистика</a>
+            <a class="btn " href="{% url 'client_app:js_examples'%}">JS EXASMPLES</a>
+        </div>
+
+        <div class="col-md-9">
+        {% block inside_cabinet %}
+            {% if saved %}
+                <p class="alert alert-success">Данные сохранены</p>
+            {% endif %}
+            <form action="{% url 'client_app:profile' %}" method="post">
+                {% csrf_token %}
+                {% for f in form %}
+                    <div>
+                        <label for="">{{ f.label }}</label>
+                        {{ f }}
+                    </div>
+                {% endfor %}
+                <button class="btn btn-success"> Save</button>
+            </form>
+            {% endblock %}
+        </div>
+
+    </div>
+
+{% endblock %}

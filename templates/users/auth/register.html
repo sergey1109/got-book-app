@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <h1>Register page</h1>
+    <form action="{% url 'client_app:register' %}" method="post">
+        {% csrf_token %}
+
+        {% for field in form %}
+            <div>
+                <label for=" ">{{ field.label }}</label>
+                {{ field }}
+                {% if field.errors %}
+                    {% for err in field.errors %}
+                        <p style="color: red; font-size:12px ">{{ err }}</p>
+
+                    {% endfor %}
+                {% endif %}
+            </div>
+        {% endfor %}
+        <button class="btn btn-success">Register</button>
+    </form>
+
+{% endblock %}

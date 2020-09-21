@@ -1,0 +1,62 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <h1 style="text-align: center">{{ author.front_name }}</h1>
+    <p class="alert alert-info">
+        Birthday date {{ author.date_birth }} -
+        {% if author.date_dead %}
+            {{ author.date_dead }}
+        {% else %}
+            To the current date
+        {% endif %}
+    </p>
+
+
+
+    <h3>Biography</h3>
+    <p class="alert">
+        {{ author.bio }}
+    </p>
+
+    <h3>All books by this author </h3>
+<div class="row">
+        <div class="col-md-6">
+              <p class="alert alert-danger">
+        Book for sale - {{ author.count_sale }}
+    </p>
+        </div>
+         <div class="col-md-6">
+              <p class="alert alert-primary">
+        Book not  for sale - {{ author.count_is_not_sale }}
+    </p>
+        </div>
+    </div>
+    <div class="row">
+
+
+    {% for book in author.get_books %}
+        <div class="col-md-4">
+           <p class="">
+                    <a href="/book-detail/{{ book.id }}/">{{ book.title }}</a></p>
+                <p class="">{{ book.get_genre_display }}</p>
+            <p>Is sale??? {{ book.}}</p>
+            <p> NEW Price {{ book.new_price }}</p>
+                <button class="btn btn-primary">Buy</button>
+                <button class="btn success">Favorites</button>
+        </div>
+        {% endfor %}
+   <p class="alert alert-primary " style="text-align: center; align-items: center;justify-content: center">Total cost - {{ author.get_total_price }}$</p>
+    </div>
+   {% comment %}<div class="row">
+        {% for book in books %}
+            <div class="col-md-4">
+                <p class="">
+                    <a href="/book-detail/{{ book.id }}/">{{ book.title }}</a></p>
+                <p class="">{{ book.get_genre_display }}</p>
+                <button class="btn btn-primary">Buy</button>
+                <button class="btn success">Favorites</button>
+
+            </div>
+        {% endfor %}
+    </div>{% endcomment %}
+{% endblock %}

@@ -1,0 +1,25 @@
+
+<div class="book-item">
+    <h3>№{{ forloop.counter }}</h3>
+        <h2>id {{ obj.id }}</h2>
+    <p>
+        <a href="/book-detail/{{ obj.id }}/">{{ obj.title }}</a>
+    </p>
+    {% if obj.is_sale  %}
+      <p >Старая цена -
+          <span style="text-decoration: line-through; font-size: 12px"> {{ obj.price }}</span></p>
+        <p style="font-size: 18px; "> Новая цена  - {{ obj.new_price }}</p>
+        {% else %}
+        <p style="font-size: 18px">Цена  - {{ obj.price }}</p>
+    {% endif %}
+
+    <p>{{ obj.author.front_name }}</p>
+    {% if page == 'home' %}
+    <p>
+      <a href="{% url 'client_app:add_to_session' pk=obj.id %}" class="btn btn-info">В корзину</a>
+    </p>
+    {% elif page == 'bucket'%}
+             <a href="#" class="btn btn-info">Купить</a>
+             <a href="{% url 'client_app:delete_bucket' pk=obj.id %}" class="btn btn-info">Удалить из корзины</a>
+    {% endif %}
+    </div>

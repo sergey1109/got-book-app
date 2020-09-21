@@ -1,0 +1,38 @@
+{% extends 'users/cabinet/profile.html' %}
+
+{% block inside_cabinet %}
+<h1>My  articles</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Заголовок </th>
+      <th scope="col">Кол-во просмотров</th>
+      <th scope="col">Кол-во комментариев </th>
+      <th scope="col">Действие</th>
+    </tr>eeeeeeeeeeee
+  </thead>
+  <tbody>
+     {% for article in articles %}
+    <tr>
+      <th scope="row"> <p>{{ forloop.counter }}</p></th>
+      <td>{{ article.title }}</td>
+      <td>{{ article.count_view }}</td>
+      <td>
+          <a href="">
+              Просмотреть - {{ article.get_comments | length }}
+          </a>
+      </td>
+      <td>
+          <a href="{% url 'client_app:delete_article' pk=article.id %}">Удалить</a>
+          <a href="{% url 'client_app:update_article' pk=article.id%}">Изменить</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+
+
+{% endblock %}

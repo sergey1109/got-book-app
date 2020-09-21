@@ -1,0 +1,32 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+    <a href="/ ">Back to all books</a>
+    <h1>{{ book.title }}</h1>
+    <h2>Author -
+        <a href="/author-detail/{{ book.author.id }}/">{{ book.author.front_name }}
+    </a>
+    </h2>
+    <div>
+        <p>Description:</p>
+        <p>{{ book.description }}</p>
+        <p>Price - {{ book.price }}</p>
+        {% if book.is_sale  %}
+            <div class="alert alert-primary" role="alert">
+  Is sale !!!!New price - {{ book.new_price }}
+</div>
+
+        {% else %}
+        <p style="color: black">Not for sale!!</p>
+        {% endif %}
+
+        <p>Genre - {{ book.get_genre_display}}</p>
+    <a class="btn btn-success">Купить</a>
+    <a href="{% url 'client_app:add_to_session' pk=book.id %}" class="btn btn-info">В корзину</a>
+    </div>
+
+
+
+
+{%  endblock %}

@@ -1,0 +1,41 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <h1>{{ article.title }}</h1>
+    <p>Автор статьи {{ article.author.get_type_view }}</p>
+    <h3>текст статьи</h3>
+    <div>{{ article.content }}</div>
+    <h2>Комментарии ({{ article.get_comments | length }}) :</h2>
+    {% if article.get_comments %}
+        {% for comment in article.get_comments %}
+            <div>
+                <a href=""> #{{ comment.user.get_type_view }}</a>
+                <p>
+                <hr>
+
+                {{ comment.text }}
+            </p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p class="alert alert-info">В данной статье нет комментов</p>
+    {% endif %}
+
+    <p>Оставьте свой коммент</p>
+
+
+
+{% if request.user.is_authenticated %}
+    <form action="{% url 'client_app:add_comment' id_article=article.id %}" method="post">
+    {% csrf_token %}
+        {{ form }}
+        <br>
+        <button class="btn btn-success">Прикрепить коммент</button>
+
+    </form>
+{% else  %}
+    <p class="alert alert-danger">Коммент могу оставлять только авторизованныу пользователи</p>
+    <a href="{% url 'client_app:login' %}">Войти</a>
+{% endif %}
+
+{% endblock content %}

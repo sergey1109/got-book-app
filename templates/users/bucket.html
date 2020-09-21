@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<h1>Корзина {{ total_price }}$</h1>
+
+<div class="wrap">
+    {% for i in books %}
+    {% include "partials/part_book_item.html" with obj=i page='bucket' %}
+    {% endfor %}
+</div>
+{% endblock %}

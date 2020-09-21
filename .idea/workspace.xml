@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7dca9cf9-4438-4de3-8a81-a14101d6b139" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1f5axTi0EwbKL5fDznuMZ01mxYc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="application.passwordSafe" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\testlessonbook\templates\users" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="testlessonbook" type="Python.DjangoServer" factoryName="Django server">
+      <module name="testlessonbook" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7dca9cf9-4438-4de3-8a81-a14101d6b139" name="Default Changelist" comment="" />
+      <created>1595510653131</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595510653131</updated>
+      <workItem from="1595510760442" duration="6634000" />
+      <workItem from="1596019280905" duration="17000" />
+      <workItem from="1596447035863" duration="13588000" />
+      <workItem from="1596616891411" duration="8134000" />
+      <workItem from="1596792409032" duration="22721000" />
+      <workItem from="1597050264005" duration="9546000" />
+      <workItem from="1597091567521" duration="30964000" />
+      <workItem from="1597314652855" duration="7062000" />
+      <workItem from="1598348767775" duration="10764000" />
+      <workItem from="1598437664709" duration="3858000" />
+      <workItem from="1598529192514" duration="17711000" />
+      <workItem from="1599303653219" duration="23366000" />
+      <workItem from="1599651897332" duration="35551000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="613" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597064938409">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="613" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597064938409" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1595688207920">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595688207920" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1597173454589">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1597173454589" />
+    <state x="0" y="166" key="SettingsEditor" timestamp="1599487322758">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="166" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599487322758" />
+    <state x="92" y="101" width="1172" height="840" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599484095147">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="101" width="1172" height="840" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599484095147" />
+    <state x="1114" y="260" width="585" height="530" key="find.popup" timestamp="1597164110668">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1114" y="260" width="585" height="530" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597164110668" />
+    <state x="152" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1599487346372">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="152" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599487346372" />
+  </component>
+</project>

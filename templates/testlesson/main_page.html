@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+
+
+{% block content %}
+<div class="wrap">
+    {% for book in books %}
+    {% include "partials/part_book_item.html" with obj=book page='home' %}
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<h1>all articles</h1>
+    <div class="row">
+    {% for article in articles %}
+    <div class="col-md-3">
+    <p>{{ article.title }}</p>
+    <p><a href="">Автор статьи{{ article.author.get_type_view }}</a></p>
+        <a href="{% url 'client_app:article_detail' pk=article.id %}" class="btn vtn-danger">Прочитать</a>
+    </div>
+    {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'users/cabinet/profile.html' %}
+{% block inside_cabinet %}
+<h1>write post </h1>
+{% if saved %}
+    <p class="alert alert-success">Статью успешно сохранили</p>
+    {% endif %}
+    <form action="{% url 'client_app:write_post' %}" method="post">
+    {% csrf_token %}
+    {% for f in form %}
+    <div>
+        <label for="">{{ f.label }}</label>
+    {{ f }}
+    </div>
+    {% endfor %}
+        <button class="btn btn-info">Save</button>
+    </form>
+
+{% endblock %}
